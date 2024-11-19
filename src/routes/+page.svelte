@@ -66,6 +66,7 @@
     import { get } from "svelte/store";
     import { kirimMsg } from "$lib/mqttHandle";
     import SveltyPicker from 'svelty-picker';
+    import { base } from '$app/paths';
 
     let sts_count = 0;
     let myPassword = "";
@@ -2119,11 +2120,11 @@
                                             on:change={() => siramLahan(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2140,11 +2141,11 @@
                                             on:change={() => siramLahan(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2161,11 +2162,11 @@
                                             on:change={() => siramLahan(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2182,11 +2183,11 @@
                                             on:change={() => siramLahan(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2230,13 +2231,13 @@
                                             />
                                             <div class="swap-on">
                                                 <img
-                                                    src=" /on4.png"
+                                                    src="{base}/on4.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off">
                                                 <img
-                                                    src=" /off4.png"
+                                                    src="{base}/off4.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -2404,11 +2405,11 @@
                                                 semprotPestisida(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2426,11 +2427,11 @@
                                                 semprotPestisida(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2448,11 +2449,11 @@
                                                 semprotPestisida(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2470,11 +2471,11 @@
                                                 semprotPestisida(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2501,13 +2502,13 @@
                                             />
                                             <div class="swap-on">
                                                 <img
-                                                    src=" /on4.png"
+                                                    src="{base}/on4.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off">
                                                 <img
-                                                    src=" /off4.png"
+                                                    src="{base}/off4.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -2674,11 +2675,11 @@
                                             on:change={() => semprotBiopest(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2695,11 +2696,11 @@
                                             on:change={() => semprotBiopest(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2716,11 +2717,11 @@
                                             on:change={() => semprotBiopest(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2737,11 +2738,11 @@
                                             on:change={() => semprotBiopest(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src=" /on6.png" alt="btn_on" />
+                                            <img src="{base}/on6.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
-                                                src=" /off6.png"
+                                                src="{base}/off6.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -2768,13 +2769,13 @@
                                             />
                                             <div class="swap-on">
                                                 <img
-                                                    src=" /on4.png"
+                                                    src="{base}/on4.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off">
                                                 <img
-                                                    src=" /off4.png"
+                                                    src="{base}/off4.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -3041,13 +3042,13 @@
                                             />
                                             <div class="swap-on h-6 w-12">
                                                 <img
-                                                    src=" /on6.png"
+                                                    src="{base}/on6.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off h-6 w-12">
                                                 <img
-                                                    src=" /off6.png"
+                                                    src="{base}/off6.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -3107,13 +3108,13 @@
                                             />
                                             <div class="swap-on h-6 w-12">
                                                 <img
-                                                    src=" /on6.png"
+                                                    src="{base}/on6.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off h-6 w-12">
                                                 <img
-                                                    src=" /off6.png"
+                                                    src="{base}/off6.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -3173,13 +3174,13 @@
                                             />
                                             <div class="swap-on h-6 w-12">
                                                 <img
-                                                    src=" /on6.png"
+                                                    src="{base}/on6.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off h-6 w-12">
                                                 <img
-                                                    src=" /off6.png"
+                                                    src="{base}/off6.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -3239,13 +3240,13 @@
                                             />
                                             <div class="swap-on h-6 w-12">
                                                 <img
-                                                    src=" /on6.png"
+                                                    src="{base}/on6.png"
                                                     alt="btn_on"
                                                 />
                                             </div>
                                             <div class="swap-off h-6 w-12">
                                                 <img
-                                                    src=" /off6.png"
+                                                    src="{base}/off6.png"
                                                     alt="btn_off"
                                                 />
                                             </div>
@@ -3289,10 +3290,10 @@
                                             selenoidLahan(1, $lahan1_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3306,10 +3307,10 @@
                                             selenoidLahan(2, $lahan2_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3323,10 +3324,10 @@
                                             selenoidLahan(3, $lahan3_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                                 <label
@@ -3339,10 +3340,10 @@
                                             selenoidLahan(4, $lahan4_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                             </div>
@@ -3367,11 +3368,11 @@
                                             on:change={() => pompaTes(2)}
                                         />
                                         <div class="swap-on">
-                                            <img src=" /on4.png" alt="btn_on" />
+                                            <img src="{base}/on4.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off">
                                             <img
-                                                src=" /off4.png"
+                                                src="{base}/off4.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -3390,11 +3391,11 @@
                                             on:change={() => pompaTes(1)}
                                         />
                                         <div class="swap-on">
-                                            <img src=" /on4.png" alt="btn_on" />
+                                            <img src="{base}/on4.png" alt="btn_on" />
                                         </div>
                                         <div class="swap-off">
                                             <img
-                                                src=" /off4.png"
+                                                src="{base}/off4.png"
                                                 alt="btn_off"
                                             />
                                         </div>
@@ -3420,10 +3421,10 @@
                                         on:change={() => pompaTes(3)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3436,10 +3437,10 @@
                                         on:change={() => pompaTes(4)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3452,10 +3453,10 @@
                                         on:change={() => selenoidTes(1)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                                 <label
@@ -3467,10 +3468,10 @@
                                         on:change={() => selenoidTes(2)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                             </div>
@@ -3493,10 +3494,10 @@
                                         on:change={() => pompaTes(5)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3509,10 +3510,10 @@
                                         on:change={() => pompaTes(6)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
 
@@ -3525,10 +3526,10 @@
                                         on:change={() => selenoidTes(3)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                                 <label
@@ -3540,10 +3541,10 @@
                                         on:change={() => selenoidTes(4)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src=" /on6.png" alt="btn_on" />
+                                        <img src="{base}/on6.png" alt="btn_on" />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src=" /off6.png" alt="btn_off" />
+                                        <img src="{base}/off6.png" alt="btn_off" />
                                     </div>
                                 </label>
                             </div>
@@ -3747,7 +3748,7 @@
             class="bg-white text-blue-800 content-center"
         >
             <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="/penyiraman.png" alt="siram" />
+                <img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
             </div>
             <span class="btm-nav-label">Siram</span>
         </button>
@@ -3756,7 +3757,7 @@
             class="bg-white text-blue-800 content-center"
         >
             <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="/pestisida.png" alt="pestisida" />
+                <img class="w-8 h-8" src="{base}/pestisida.png" alt="pestisida" />
             </div>
             <span class="btm-nav-label">Pestisida</span>
         </button>
@@ -3765,7 +3766,7 @@
             class="bg-white text-blue-800 content-center"
         >
             <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="/biopestisida.png" alt="biopest" />
+                <img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
             </div>
             <div class="btm-nav-label">Biopest</div>
         </button>
@@ -3774,7 +3775,7 @@
             class="bg-white text-blue-800 content-center"
         >
             <div class="w-full w-full flex justify-center">
-                <img class="w-5 h-5" src="/setup.png" alt="setup" />
+                <img class="w-5 h-5" src="{base}/setup.png" alt="setup" />
             </div>
             <span class="btm-nav-label">Setup</span>
         </button>
@@ -3784,7 +3785,7 @@
             class="bg-white text-blue-800 content-center"
         >
             <div class="w-full w-full flex justify-center">
-                <img class="w-5 h-5" src="/exit.png" alt="exit" />
+                <img class="w-5 h-5" src="{base}/exit.png" alt="exit" />
             </div>
             <span class="btm-nav-label">Keluar</span>
         </button>
@@ -3839,10 +3840,10 @@
 								on:change={() => jadwalAktif(1)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src=" /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src=" /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -3921,10 +3922,10 @@
 								on:change={() => jadwalAktif(2)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src=" /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src=" /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -4003,10 +4004,10 @@
 								on:change={() => jadwalAktif(3)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src=" /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src=" /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -4085,10 +4086,10 @@
 								on:change={() => jadwalAktif(4)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src=" /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src=" /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
@@ -4167,10 +4168,10 @@
 								on:change={() => jadwalAktif(5)}
 							/>
 							<div class="swap-on h-6 w-12">
-								<img src=" /on6.png" alt="btn_on" />
+								<img src="{base}/on6.png" alt="btn_on" />
 							</div>
 							<div class="swap-off h-6 w-12">
-								<img src=" /off6.png" alt="btn_off" />
+								<img src="{base}/off6.png" alt="btn_off" />
 							</div>
 						</label>
 					</div>
