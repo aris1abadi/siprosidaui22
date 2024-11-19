@@ -65,8 +65,8 @@
     import Modal from "$lib/Modal.svelte";
     import { get } from "svelte/store";
     import { kirimMsg } from "$lib/mqttHandle";
-    import SveltyPicker from 'svelty-picker';
-    import { base } from '$app/paths';
+    import SveltyPicker from "svelty-picker";
+    import { base } from "$app/paths";
 
     let sts_count = 0;
     let myPassword = "";
@@ -1945,7 +1945,7 @@
         </div>
     {:else if pageNow === "siram"}
         <div
-            class="bg_siram h-full w-full grid justify-items-center max-w-md mx-auto flex flex-col"
+            class="bg_siram h-5/6 w-full grid justify-items-center max-w-md mx-auto flex flex-col"
         >
             <div class="hd_siram1 w-full h-14">
                 <div class="text-xs w-full text-center mt-14">
@@ -2107,20 +2107,23 @@
                         <!--pilih lahan-->
                         <div class="grid grid-cols-4 mt-4">
                             <div class="col-span-2 p-2">
-                                <div class="grid grid-cols-2 gap-2 ">
+                                <div class="grid grid-cols-2 gap-2">
                                     <label
                                         class="swap h-10 w-full text-center text-xs"
                                     >
                                         <small class="mt-6 font-bold"
                                             >Lahan1</small
                                         >
-                                        <input 
+                                        <input
                                             type="checkbox"
                                             bind:checked={$lahan1_status}
                                             on:change={() => siramLahan(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2141,7 +2144,10 @@
                                             on:change={() => siramLahan(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2162,7 +2168,10 @@
                                             on:change={() => siramLahan(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2183,7 +2192,10 @@
                                             on:change={() => siramLahan(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2252,7 +2264,7 @@
         </div>
     {:else if pageNow === "pestisida"}
         <div
-            class="bg_pestisida h-full w-full grid justify-items-center max-w-md mx-auto flex flex-col"
+            class="bg_pestisida h-5/6 w-full grid justify-items-center max-w-md mx-auto flex flex-col"
         >
             <div class="hd_pestisida1 w-full h-16">
                 <div class="text-xs w-full text-center mt-12">
@@ -2405,7 +2417,10 @@
                                                 semprotPestisida(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2427,7 +2442,10 @@
                                                 semprotPestisida(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2449,7 +2467,10 @@
                                                 semprotPestisida(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2471,7 +2492,10 @@
                                                 semprotPestisida(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2523,7 +2547,7 @@
         </div>
     {:else if pageNow === "biopest"}
         <div
-            class="bg_biopest h-full w-full grid justify-items-center max-w-md mx-auto flex flex-col"
+            class="bg_biopest h-5/6 w-full grid justify-items-center max-w-md mx-auto flex flex-col"
         >
             <div class="hd_biopest1 w-full h-16">
                 <div class="text-xs w-full text-center mt-12">
@@ -2675,7 +2699,10 @@
                                             on:change={() => semprotBiopest(1)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2696,7 +2723,10 @@
                                             on:change={() => semprotBiopest(2)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2717,7 +2747,10 @@
                                             on:change={() => semprotBiopest(3)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2738,7 +2771,10 @@
                                             on:change={() => semprotBiopest(4)}
                                         />
                                         <div class="swap-on h-6 w-12">
-                                            <img src="{base}/on6.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on6.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off h-6 w-12">
                                             <img
@@ -2789,7 +2825,7 @@
             </div>
         </div>
     {:else if pageNow === "setup"}
-        <div class="mainbg h-full w-full max-w-md mx-auto flex flex-col">
+        <div class="mainbg h-5/6 w-full max-w-md mx-auto flex flex-col">
             <div class="hd_home w-full h-16">
                 <div class="text-xs w-full text-center mt-12">
                     {get(kontrolIDStore)} ~ {get(clientIDStore)}
@@ -3290,10 +3326,16 @@
                                             selenoidLahan(1, $lahan1_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3307,10 +3349,16 @@
                                             selenoidLahan(2, $lahan2_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3324,10 +3372,16 @@
                                             selenoidLahan(3, $lahan3_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                                 <label
@@ -3340,10 +3394,16 @@
                                             selenoidLahan(4, $lahan4_status)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                             </div>
@@ -3368,7 +3428,10 @@
                                             on:change={() => pompaTes(2)}
                                         />
                                         <div class="swap-on">
-                                            <img src="{base}/on4.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on4.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off">
                                             <img
@@ -3391,7 +3454,10 @@
                                             on:change={() => pompaTes(1)}
                                         />
                                         <div class="swap-on">
-                                            <img src="{base}/on4.png" alt="btn_on" />
+                                            <img
+                                                src="{base}/on4.png"
+                                                alt="btn_on"
+                                            />
                                         </div>
                                         <div class="swap-off">
                                             <img
@@ -3421,10 +3487,16 @@
                                         on:change={() => pompaTes(3)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3437,10 +3509,16 @@
                                         on:change={() => pompaTes(4)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3453,10 +3531,16 @@
                                         on:change={() => selenoidTes(1)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                                 <label
@@ -3468,10 +3552,16 @@
                                         on:change={() => selenoidTes(2)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                             </div>
@@ -3494,10 +3584,16 @@
                                         on:change={() => pompaTes(5)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3510,10 +3606,16 @@
                                         on:change={() => pompaTes(6)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
 
@@ -3526,10 +3628,16 @@
                                         on:change={() => selenoidTes(3)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                                 <label
@@ -3541,10 +3649,16 @@
                                         on:change={() => selenoidTes(4)}
                                     />
                                     <div class="swap-on h-6 w-12">
-                                        <img src="{base}/on6.png" alt="btn_on" />
+                                        <img
+                                            src="{base}/on6.png"
+                                            alt="btn_on"
+                                        />
                                     </div>
                                     <div class="swap-off h-6 w-12">
-                                        <img src="{base}/off6.png" alt="btn_off" />
+                                        <img
+                                            src="{base}/off6.png"
+                                            alt="btn_off"
+                                        />
                                     </div>
                                 </label>
                             </div>
@@ -3735,531 +3849,573 @@
                 </div>
             </div>
         </div>
-    
-    
-        {/if}
-
-    {#if pageNow != 'login'}
-    <div
-        class="btm-nav-xs h-6 w-full max-w-md mx-auto grid grid-cols-5 bg-zinc-200"
-    >
-        <button
-            on:click={() => pageClick("siram")}
-            class="bg-white text-blue-800 content-center"
-        >
-            <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="{base}/penyiraman.png" alt="siram" />
-            </div>
-            <span class="btm-nav-label">Siram</span>
-        </button>
-        <button
-            on:click={() => pageClick("pestisida")}
-            class="bg-white text-blue-800 content-center"
-        >
-            <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="{base}/pestisida.png" alt="pestisida" />
-            </div>
-            <span class="btm-nav-label">Pestisida</span>
-        </button>
-        <button
-            on:click={() => pageClick("biopest")}
-            class="bg-white text-blue-800 content-center"
-        >
-            <div class="w-full w-full flex justify-center">
-                <img class="w-8 h-8" src="{base}/biopestisida.png" alt="biopest" />
-            </div>
-            <div class="btm-nav-label">Biopest</div>
-        </button>
-        <button
-            on:click={() => pageClick("setup")}
-            class="bg-white text-blue-800 content-center"
-        >
-            <div class="w-full w-full flex justify-center">
-                <img class="w-5 h-5" src="{base}/setup.png" alt="setup" />
-            </div>
-            <span class="btm-nav-label">Setup</span>
-        </button>
-
-        <button
-            on:click={() => pageClick("login")}
-            class="bg-white text-blue-800 content-center"
-        >
-            <div class="w-full w-full flex justify-center">
-                <img class="w-5 h-5" src="{base}/exit.png" alt="exit" />
-            </div>
-            <span class="btm-nav-label">Keluar</span>
-        </button>
-    </div>
-
     {/if}
 
+    {#if pageNow != "login"}
+        <div
+            class="btm-nav-xs h-6 w-full max-w-md mx-auto grid grid-cols-5 bg-zinc-200"
+        >
+            <button
+                on:click={() => pageClick("siram")}
+                class="bg-white text-blue-800 content-center"
+            >
+                <div class="w-full w-full flex justify-center">
+                    <img
+                        class="w-8 h-8"
+                        src="{base}/penyiraman.png"
+                        alt="siram"
+                    />
+                </div>
+                <span class="btm-nav-label">Siram</span>
+            </button>
+            <button
+                on:click={() => pageClick("pestisida")}
+                class="bg-white text-blue-800 content-center"
+            >
+                <div class="w-full w-full flex justify-center">
+                    <img
+                        class="w-8 h-8"
+                        src="{base}/pestisida.png"
+                        alt="pestisida"
+                    />
+                </div>
+                <span class="btm-nav-label">Pestisida</span>
+            </button>
+            <button
+                on:click={() => pageClick("biopest")}
+                class="bg-white text-blue-800 content-center"
+            >
+                <div class="w-full w-full flex justify-center">
+                    <img
+                        class="w-8 h-8"
+                        src="{base}/biopestisida.png"
+                        alt="biopest"
+                    />
+                </div>
+                <div class="btm-nav-label">Biopest</div>
+            </button>
+            <button
+                on:click={() => pageClick("setup")}
+                class="bg-white text-blue-800 content-center"
+            >
+                <div class="w-full w-full flex justify-center">
+                    <img class="w-5 h-5" src="{base}/setup.png" alt="setup" />
+                </div>
+                <span class="btm-nav-label">Setup</span>
+            </button>
+
+            <button
+                on:click={() => pageClick("login")}
+                class="bg-white text-blue-800 content-center"
+            >
+                <div class="w-full w-full flex justify-center">
+                    <img class="w-5 h-5" src="{base}/exit.png" alt="exit" />
+                </div>
+                <span class="btm-nav-label">Keluar</span>
+            </button>
+        </div>
+    {/if}
 </div>
 
 <!--pop up-->
 <Modal bind:showModal bind:timeOut>
-	{#if showMode === 1}
-		{#if showjadwal === 1}
-			<!-- jadwal 1-->
-			<div class="grid justify-items-center border-1">
-				<div class="w-full text-center font-bold">Jadwal 1</div>
-				<div class="w-full grid grid-cols-3 gap-2 mt-4">
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Waktu
-						</div>
-						<SveltyPicker
-							bind:value={waktuSiram1}
-							inputClasses="w-3/4 font-bold text-lg text-center mx-4"
-							placeholder="06:30"
-							format="hh:ii"
-							displayFormat="hh:ii "
-						/>
-					</div>
-					<label class=" border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Durasi <b>{durasiSiram1}</b> menit
-						</div>
-						<div class="grid justify-items-center">
-							<input
-								class="w-3/4 h-2 my-4"
-								type="range"
-								bind:value={durasiSiram1}
-								min="1"
-								max="15"
-							/>
-						</div>
-					</label>
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Aktifkan
-						</div>
-						<label class="swap h-10 w-full text-center text-xs">
-							<input
-								type="checkbox"
-								bind:checked={jadwal1Enable}
-								on:change={() => jadwalAktif(1)}
-							/>
-							<div class="swap-on h-6 w-12">
-								<img src="{base}/on6.png" alt="btn_on" />
-							</div>
-							<div class="swap-off h-6 w-12">
-								<img src="{base}/off6.png" alt="btn_off" />
-							</div>
-						</label>
-					</div>
-				</div>
-				<!-- hari-->
+    {#if showMode === 1}
+        {#if showjadwal === 1}
+            <!-- jadwal 1-->
+            <div class="grid justify-items-center border-1">
+                <div class="w-full text-center font-bold">Jadwal 1</div>
+                <div class="w-full grid grid-cols-3 gap-2 mt-4">
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Waktu
+                        </div>
+                        <SveltyPicker
+                            bind:value={waktuSiram1}
+                            inputClasses="w-3/4 font-bold text-lg text-center mx-4"
+                            placeholder="06:30"
+                            format="hh:ii"
+                            displayFormat="hh:ii "
+                        />
+                    </div>
+                    <label class=" border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Durasi <b>{durasiSiram1}</b> menit
+                        </div>
+                        <div class="grid justify-items-center">
+                            <input
+                                class="w-3/4 h-2 my-4"
+                                type="range"
+                                bind:value={durasiSiram1}
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </label>
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Aktifkan
+                        </div>
+                        <label class="swap h-10 w-full text-center text-xs">
+                            <input
+                                type="checkbox"
+                                bind:checked={jadwal1Enable}
+                                on:change={() => jadwalAktif(1)}
+                            />
+                            <div class="swap-on h-6 w-12">
+                                <img src="{base}/on6.png" alt="btn_on" />
+                            </div>
+                            <div class="swap-off h-6 w-12">
+                                <img src="{base}/off6.png" alt="btn_off" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- hari-->
 
-				<div
-					class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
-				>
-					{#each hari as hariNow, idx}
-						<label class="text-xs">
-							<div><small>{hariNow}</small></div>
-							<input
-								type="checkbox"
-								bind:checked={cekHari1[idx]}
-								on:change={() => pilihanHari1Click(idx)}
-							/>
-						</label>
-					{/each}
-				</div>
+                <div
+                    class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
+                >
+                    {#each hari as hariNow, idx}
+                        <label class="text-xs">
+                            <div><small>{hariNow}</small></div>
+                            <input
+                                type="checkbox"
+                                bind:checked={cekHari1[idx]}
+                                on:change={() => pilihanHari1Click(idx)}
+                            />
+                        </label>
+                    {/each}
+                </div>
 
-				<div
-					class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
-				>
-					{#each lahan as lahanNow, idx}
-						<label class="grid justify-items-center">
-							<input
-								type="checkbox"
-								bind:checked={cekLahan1[idx]}
-								on:change={() => lahan1Click(idx)}
-							/>
-							<div class="text-xs"><small>{lahanNow}</small></div>
-						</label>
-					{/each}
-				</div>
-			</div>
-		{:else if showjadwal === 2}
-			<!-- jadwal 2-->
-			<div class="grid justify-items-center border-1">
-				<div class="w-full text-center font-bold">Jadwal 2</div>
-				<div class="w-full grid grid-cols-3 gap-2 mt-4">
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Waktu
-						</div>
-						<SveltyPicker
-							bind:value={waktuSiram2}
-							inputClasses="w-3/4 font-bold text-lg text-center mx-4"
-							placeholder="06:30"
-							format="hh:ii"
-							displayFormat="hh:ii "
-						/>
-					</div>
-					<label class=" border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Durasi <b>{durasiSiram2}</b> menit
-						</div>
-						<div class="grid justify-items-center">
-							<input
-								class="w-3/4 h-2 my-4"
-								type="range"
-								bind:value={durasiSiram2}
-								min="1"
-								max="15"
-							/>
-						</div>
-					</label>
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Aktifkan
-						</div>
-						<label class="swap h-10 w-full text-center text-xs">
-							<input
-								type="checkbox"
-								bind:checked={jadwal2Enable}
-								on:change={() => jadwalAktif(2)}
-							/>
-							<div class="swap-on h-6 w-12">
-								<img src="{base}/on6.png" alt="btn_on" />
-							</div>
-							<div class="swap-off h-6 w-12">
-								<img src="{base}/off6.png" alt="btn_off" />
-							</div>
-						</label>
-					</div>
-				</div>
-				<!-- hari-->
+                <div
+                    class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
+                >
+                    {#each lahan as lahanNow, idx}
+                        <label class="grid justify-items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={cekLahan1[idx]}
+                                on:change={() => lahan1Click(idx)}
+                            />
+                            <div class="text-xs"><small>{lahanNow}</small></div>
+                        </label>
+                    {/each}
+                </div>
+            </div>
+        {:else if showjadwal === 2}
+            <!-- jadwal 2-->
+            <div class="grid justify-items-center border-1">
+                <div class="w-full text-center font-bold">Jadwal 2</div>
+                <div class="w-full grid grid-cols-3 gap-2 mt-4">
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Waktu
+                        </div>
+                        <SveltyPicker
+                            bind:value={waktuSiram2}
+                            inputClasses="w-3/4 font-bold text-lg text-center mx-4"
+                            placeholder="06:30"
+                            format="hh:ii"
+                            displayFormat="hh:ii "
+                        />
+                    </div>
+                    <label class=" border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Durasi <b>{durasiSiram2}</b> menit
+                        </div>
+                        <div class="grid justify-items-center">
+                            <input
+                                class="w-3/4 h-2 my-4"
+                                type="range"
+                                bind:value={durasiSiram2}
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </label>
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Aktifkan
+                        </div>
+                        <label class="swap h-10 w-full text-center text-xs">
+                            <input
+                                type="checkbox"
+                                bind:checked={jadwal2Enable}
+                                on:change={() => jadwalAktif(2)}
+                            />
+                            <div class="swap-on h-6 w-12">
+                                <img src="{base}/on6.png" alt="btn_on" />
+                            </div>
+                            <div class="swap-off h-6 w-12">
+                                <img src="{base}/off6.png" alt="btn_off" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- hari-->
 
-				<div
-					class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
-				>
-					{#each hari as hariNow, idx}
-						<label class="text-xs">
-							<div><small>{hariNow}</small></div>
-							<input
-								type="checkbox"
-								bind:checked={cekHari2[idx]}
-								on:change={() => pilihanHari2Click(idx)}
-							/>
-						</label>
-					{/each}
-				</div>
+                <div
+                    class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
+                >
+                    {#each hari as hariNow, idx}
+                        <label class="text-xs">
+                            <div><small>{hariNow}</small></div>
+                            <input
+                                type="checkbox"
+                                bind:checked={cekHari2[idx]}
+                                on:change={() => pilihanHari2Click(idx)}
+                            />
+                        </label>
+                    {/each}
+                </div>
 
-				<div
-					class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
-				>
-					{#each lahan as lahanNow, idx}
-						<label class="grid justify-items-center">
-							<input
-								type="checkbox"
-								bind:checked={cekLahan2[idx]}
-								on:change={() => lahan2Click(idx)}
-							/>
-							<div class="text-xs"><small>{lahanNow}</small></div>
-						</label>
-					{/each}
-				</div>
-			</div>
-		{:else if showjadwal === 3}
-			<!-- jadwal 3-->
-			<div class="grid justify-items-center border-1">
-				<div class="w-full text-center font-bold">Jadwal 3</div>
-				<div class="w-full grid grid-cols-3 gap-2 mt-4">
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Waktu
-						</div>
-						<SveltyPicker
-							bind:value={waktuSiram3}
-							inputClasses="w-3/4 font-bold text-lg text-center mx-4"
-							placeholder="06:30"
-							format="hh:ii"
-							displayFormat="hh:ii "
-						/>
-					</div>
-					<label class=" border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Durasi <b>{durasiSiram3}</b> menit
-						</div>
-						<div class="grid justify-items-center">
-							<input
-								class="w-3/4 h-2 my-4"
-								type="range"
-								bind:value={durasiSiram3}
-								min="1"
-								max="15"
-							/>
-						</div>
-					</label>
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Aktifkan
-						</div>
-						<label class="swap h-10 w-full text-center text-xs">
-							<input
-								type="checkbox"
-								bind:checked={jadwal3Enable}
-								on:change={() => jadwalAktif(3)}
-							/>
-							<div class="swap-on h-6 w-12">
-								<img src="{base}/on6.png" alt="btn_on" />
-							</div>
-							<div class="swap-off h-6 w-12">
-								<img src="{base}/off6.png" alt="btn_off" />
-							</div>
-						</label>
-					</div>
-				</div>
-				<!-- hari-->
+                <div
+                    class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
+                >
+                    {#each lahan as lahanNow, idx}
+                        <label class="grid justify-items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={cekLahan2[idx]}
+                                on:change={() => lahan2Click(idx)}
+                            />
+                            <div class="text-xs"><small>{lahanNow}</small></div>
+                        </label>
+                    {/each}
+                </div>
+            </div>
+        {:else if showjadwal === 3}
+            <!-- jadwal 3-->
+            <div class="grid justify-items-center border-1">
+                <div class="w-full text-center font-bold">Jadwal 3</div>
+                <div class="w-full grid grid-cols-3 gap-2 mt-4">
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Waktu
+                        </div>
+                        <SveltyPicker
+                            bind:value={waktuSiram3}
+                            inputClasses="w-3/4 font-bold text-lg text-center mx-4"
+                            placeholder="06:30"
+                            format="hh:ii"
+                            displayFormat="hh:ii "
+                        />
+                    </div>
+                    <label class=" border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Durasi <b>{durasiSiram3}</b> menit
+                        </div>
+                        <div class="grid justify-items-center">
+                            <input
+                                class="w-3/4 h-2 my-4"
+                                type="range"
+                                bind:value={durasiSiram3}
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </label>
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Aktifkan
+                        </div>
+                        <label class="swap h-10 w-full text-center text-xs">
+                            <input
+                                type="checkbox"
+                                bind:checked={jadwal3Enable}
+                                on:change={() => jadwalAktif(3)}
+                            />
+                            <div class="swap-on h-6 w-12">
+                                <img src="{base}/on6.png" alt="btn_on" />
+                            </div>
+                            <div class="swap-off h-6 w-12">
+                                <img src="{base}/off6.png" alt="btn_off" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- hari-->
 
-				<div
-					class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
-				>
-					{#each hari as hariNow, idx}
-						<label class="text-xs">
-							<div><small>{hariNow}</small></div>
-							<input
-								type="checkbox"
-								bind:checked={cekHari3[idx]}
-								on:change={() => pilihanHari3Click(idx)}
-							/>
-						</label>
-					{/each}
-				</div>
+                <div
+                    class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
+                >
+                    {#each hari as hariNow, idx}
+                        <label class="text-xs">
+                            <div><small>{hariNow}</small></div>
+                            <input
+                                type="checkbox"
+                                bind:checked={cekHari3[idx]}
+                                on:change={() => pilihanHari3Click(idx)}
+                            />
+                        </label>
+                    {/each}
+                </div>
 
-				<div
-					class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
-				>
-					{#each lahan as lahanNow, idx}
-						<label class="grid justify-items-center">
-							<input
-								type="checkbox"
-								bind:checked={cekLahan3[idx]}
-								on:change={() => lahan3Click(idx)}
-							/>
-							<div class="text-xs"><small>{lahanNow}</small></div>
-						</label>
-					{/each}
-				</div>
-			</div>
-		{:else if showjadwal === 4}
-			<!-- jadwal 4-->
-			<div class="grid justify-items-center border-1">
-				<div class="w-full text-center font-bold">Jadwal 4</div>
-				<div class="w-full grid grid-cols-3 gap-2 mt-4">
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Waktu
-						</div>
-						<SveltyPicker
-							bind:value={waktuSiram4}
-							inputClasses="w-3/4 font-bold text-lg text-center mx-4"
-							placeholder="06:30"
-							format="hh:ii"
-							displayFormat="hh:ii "
-						/>
-					</div>
-					<label class=" border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Durasi <b>{durasiSiram4}</b> menit
-						</div>
-						<div class="grid justify-items-center">
-							<input
-								class="w-3/4 h-2 my-4"
-								type="range"
-								bind:value={durasiSiram4}
-								min="1"
-								max="15"
-							/>
-						</div>
-					</label>
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Aktifkan
-						</div>
-						<label class="swap h-10 w-full text-center text-xs">
-							<input
-								type="checkbox"
-								bind:checked={jadwal4Enable}
-								on:change={() => jadwalAktif(4)}
-							/>
-							<div class="swap-on h-6 w-12">
-								<img src="{base}/on6.png" alt="btn_on" />
-							</div>
-							<div class="swap-off h-6 w-12">
-								<img src="{base}/off6.png" alt="btn_off" />
-							</div>
-						</label>
-					</div>
-				</div>
-				<!-- hari-->
+                <div
+                    class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
+                >
+                    {#each lahan as lahanNow, idx}
+                        <label class="grid justify-items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={cekLahan3[idx]}
+                                on:change={() => lahan3Click(idx)}
+                            />
+                            <div class="text-xs"><small>{lahanNow}</small></div>
+                        </label>
+                    {/each}
+                </div>
+            </div>
+        {:else if showjadwal === 4}
+            <!-- jadwal 4-->
+            <div class="grid justify-items-center border-1">
+                <div class="w-full text-center font-bold">Jadwal 4</div>
+                <div class="w-full grid grid-cols-3 gap-2 mt-4">
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Waktu
+                        </div>
+                        <SveltyPicker
+                            bind:value={waktuSiram4}
+                            inputClasses="w-3/4 font-bold text-lg text-center mx-4"
+                            placeholder="06:30"
+                            format="hh:ii"
+                            displayFormat="hh:ii "
+                        />
+                    </div>
+                    <label class=" border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Durasi <b>{durasiSiram4}</b> menit
+                        </div>
+                        <div class="grid justify-items-center">
+                            <input
+                                class="w-3/4 h-2 my-4"
+                                type="range"
+                                bind:value={durasiSiram4}
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </label>
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Aktifkan
+                        </div>
+                        <label class="swap h-10 w-full text-center text-xs">
+                            <input
+                                type="checkbox"
+                                bind:checked={jadwal4Enable}
+                                on:change={() => jadwalAktif(4)}
+                            />
+                            <div class="swap-on h-6 w-12">
+                                <img src="{base}/on6.png" alt="btn_on" />
+                            </div>
+                            <div class="swap-off h-6 w-12">
+                                <img src="{base}/off6.png" alt="btn_off" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- hari-->
 
-				<div
-					class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
-				>
-					{#each hari as hariNow, idx}
-						<label class="text-xs">
-							<div><small>{hariNow}</small></div>
-							<input
-								type="checkbox"
-								bind:checked={cekHari4[idx]}
-								on:change={() => pilihanHari4Click(idx)}
-							/>
-						</label>
-					{/each}
-				</div>
+                <div
+                    class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
+                >
+                    {#each hari as hariNow, idx}
+                        <label class="text-xs">
+                            <div><small>{hariNow}</small></div>
+                            <input
+                                type="checkbox"
+                                bind:checked={cekHari4[idx]}
+                                on:change={() => pilihanHari4Click(idx)}
+                            />
+                        </label>
+                    {/each}
+                </div>
 
-				<div
-					class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
-				>
-					{#each lahan as lahanNow, idx}
-						<label class="grid justify-items-center">
-							<input
-								type="checkbox"
-								bind:checked={cekLahan4[idx]}
-								on:change={() => lahan4Click(idx)}
-							/>
-							<div class="text-xs"><small>{lahanNow}</small></div>
-						</label>
-					{/each}
-				</div>
-			</div>
-		{:else if showjadwal === 5}
-			<!--jadwal 5-->
-			<div class="grid justify-items-center border-1">
-				<div class="w-full text-center font-bold">Jadwal 5</div>
-				<div class="w-full grid grid-cols-3 gap-2 mt-4">
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Waktu
-						</div>
-						<SveltyPicker
-							bind:value={waktuSiram5}
-							inputClasses="w-3/4 font-bold text-lg text-center mx-4"
-							placeholder="06:30"
-							format="hh:ii"
-							displayFormat="hh:ii "
-						/>
-					</div>
-					<label class=" border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Durasi <b>{durasiSiram5}</b> menit
-						</div>
-						<div class="grid justify-items-center">
-							<input
-								class="w-3/4 h-2 my-4"
-								type="range"
-								bind:value={durasiSiram5}
-								min="1"
-								max="15"
-							/>
-						</div>
-					</label>
-					<div class="border rounded border-emerald-950">
-						<div class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none">
-							Aktifkan
-						</div>
-						<label class="swap h-10 w-full text-center text-xs">
-							<input
-								type="checkbox"
-								bind:checked={jadwal5Enable}
-								on:change={() => jadwalAktif(5)}
-							/>
-							<div class="swap-on h-6 w-12">
-								<img src="{base}/on6.png" alt="btn_on" />
-							</div>
-							<div class="swap-off h-6 w-12">
-								<img src="{base}/off6.png" alt="btn_off" />
-							</div>
-						</label>
-					</div>
-				</div>
-				<!-- hari-->
+                <div
+                    class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
+                >
+                    {#each lahan as lahanNow, idx}
+                        <label class="grid justify-items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={cekLahan4[idx]}
+                                on:change={() => lahan4Click(idx)}
+                            />
+                            <div class="text-xs"><small>{lahanNow}</small></div>
+                        </label>
+                    {/each}
+                </div>
+            </div>
+        {:else if showjadwal === 5}
+            <!--jadwal 5-->
+            <div class="grid justify-items-center border-1">
+                <div class="w-full text-center font-bold">Jadwal 5</div>
+                <div class="w-full grid grid-cols-3 gap-2 mt-4">
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Waktu
+                        </div>
+                        <SveltyPicker
+                            bind:value={waktuSiram5}
+                            inputClasses="w-3/4 font-bold text-lg text-center mx-4"
+                            placeholder="06:30"
+                            format="hh:ii"
+                            displayFormat="hh:ii "
+                        />
+                    </div>
+                    <label class=" border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Durasi <b>{durasiSiram5}</b> menit
+                        </div>
+                        <div class="grid justify-items-center">
+                            <input
+                                class="w-3/4 h-2 my-4"
+                                type="range"
+                                bind:value={durasiSiram5}
+                                min="1"
+                                max="15"
+                            />
+                        </div>
+                    </label>
+                    <div class="border rounded border-emerald-950">
+                        <div
+                            class="text-center text-xs bg-red-100 rounded rounded-bl-none rounded-br-none"
+                        >
+                            Aktifkan
+                        </div>
+                        <label class="swap h-10 w-full text-center text-xs">
+                            <input
+                                type="checkbox"
+                                bind:checked={jadwal5Enable}
+                                on:change={() => jadwalAktif(5)}
+                            />
+                            <div class="swap-on h-6 w-12">
+                                <img src="{base}/on6.png" alt="btn_on" />
+                            </div>
+                            <div class="swap-off h-6 w-12">
+                                <img src="{base}/off6.png" alt="btn_off" />
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <!-- hari-->
 
-				<div
-					class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
-				>
-					{#each hari as hariNow, idx}
-						<label class="text-xs">
-							<div><small>{hariNow}</small></div>
-							<input
-								type="checkbox"
-								bind:checked={cekHari5[idx]}
-								on:change={() => pilihanHari5Click(idx)}
-							/>
-						</label>
-					{/each}
-				</div>
+                <div
+                    class="w-full p-2 grid grid-cols-7 gap-4 mt-4 justify-items-center border border-gray-300 rounded"
+                >
+                    {#each hari as hariNow, idx}
+                        <label class="text-xs">
+                            <div><small>{hariNow}</small></div>
+                            <input
+                                type="checkbox"
+                                bind:checked={cekHari5[idx]}
+                                on:change={() => pilihanHari5Click(idx)}
+                            />
+                        </label>
+                    {/each}
+                </div>
 
-				<div
-					class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
-				>
-					{#each lahan as lahanNow, idx}
-						<label class="grid justify-items-center">
-							<input
-								type="checkbox"
-								bind:checked={cekLahan5[idx]}
-								on:change={() => lahan5Click(idx)}
-							/>
-							<div class="text-xs"><small>{lahanNow}</small></div>
-						</label>
-					{/each}
-				</div>
-			</div>
-		{/if}
-		{#if showjadwal !== 0}
-			<div class="grid justify-items-center">
-				<button
-					on:click={() => simpanJadwalSiram()}
-					class="w-1/2 h-12 border rounded-lg bg-green-900 text-white mt-4 mb-4"
-					>Simpan Jadwal</button
-				>
-			</div>
-		{/if}
-	{:else if showMode === 2}
-		<h3 class="text-xl font-bold text-center">Set Durasi Siram Manual</h3>
-		<hr />
-		<div class="grid grid-cols-3 my-4 justify-items-center">
-			<input
-				type="range"
-				min="2"
-				max="15"
-				bind:value={$durasiManual}
-				on:change={() => simpanDurasi()}
-				class="range range-warning col-span-2"
-			/>
+                <div
+                    class="w-full grid grid-cols-4 gap-4 p-2 mt-4 justify-items-center rounded border border-gray-450"
+                >
+                    {#each lahan as lahanNow, idx}
+                        <label class="grid justify-items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={cekLahan5[idx]}
+                                on:change={() => lahan5Click(idx)}
+                            />
+                            <div class="text-xs"><small>{lahanNow}</small></div>
+                        </label>
+                    {/each}
+                </div>
+            </div>
+        {/if}
+        {#if showjadwal !== 0}
+            <div class="grid justify-items-center">
+                <button
+                    on:click={() => simpanJadwalSiram()}
+                    class="w-1/2 h-12 border rounded-lg bg-green-900 text-white mt-4 mb-4"
+                    >Simpan Jadwal</button
+                >
+            </div>
+        {/if}
+    {:else if showMode === 2}
+        <h3 class="text-xl font-bold text-center">Set Durasi Siram Manual</h3>
+        <hr />
+        <div class="grid grid-cols-3 my-4 justify-items-center">
+            <input
+                type="range"
+                min="2"
+                max="15"
+                bind:value={$durasiManual}
+                on:change={() => simpanDurasi()}
+                class="range range-warning col-span-2"
+            />
 
-			<div class="text-center">
-				{$durasiManual} Menit
-			</div>
-		</div>
-	{:else if showMode === 3}
-		<!-- alert-->
-		<h3 class="text-xl font-bold text-center text-red-500">!!! Perhatian !!!</h3>
-		<hr />
+            <div class="text-center">
+                {$durasiManual} Menit
+            </div>
+        </div>
+    {:else if showMode === 3}
+        <!-- alert-->
+        <h3 class="text-xl font-bold text-center text-red-500">
+            !!! Perhatian !!!
+        </h3>
+        <hr />
 
-		{#if alertType === 0}
-			{#if $runMode === 1}
-				<div>Sedang Penyiraman</div>
-			{:else if $runMode === 2}
-				<div>Sedang Penyemprotan Pestisida</div>
-			{:else if $runMode === 3}
-				<div>Sedang Penyemproten Biopest</div>
-			{/if}
-		{:else if alertType === 1}
-			<div class="text-center w-full">Fungsi ini tidak berjalan di mode Demo</div>
-		{:else if alertType === 2}<!--koneksi-->
-			<div class="text-center w-full">Sedang Offline</div>
-		{:else if alertType === 3}<!--lahan-->
-			<div class="text-center w-full">Pilih Lahan</div>
-		{:else if alertType === 4}<!--Hari-->
-			<div class="text-center w-full">Pilih Hari</div>
-		{:else if alertType === 5}<!--Hari-->
-			<div class="text-center w-full">Jadwal Siram disimpan</div>
-		{/if}
-	{/if}
+        {#if alertType === 0}
+            {#if $runMode === 1}
+                <div>Sedang Penyiraman</div>
+            {:else if $runMode === 2}
+                <div>Sedang Penyemprotan Pestisida</div>
+            {:else if $runMode === 3}
+                <div>Sedang Penyemproten Biopest</div>
+            {/if}
+        {:else if alertType === 1}
+            <div class="text-center w-full">
+                Fungsi ini tidak berjalan di mode Demo
+            </div>
+        {:else if alertType === 2}<!--koneksi-->
+            <div class="text-center w-full">Sedang Offline</div>
+        {:else if alertType === 3}<!--lahan-->
+            <div class="text-center w-full">Pilih Lahan</div>
+        {:else if alertType === 4}<!--Hari-->
+            <div class="text-center w-full">Pilih Hari</div>
+        {:else if alertType === 5}<!--Hari-->
+            <div class="text-center w-full">Jadwal Siram disimpan</div>
+        {/if}
+    {/if}
 </Modal>
 
 <style>
@@ -4279,7 +4435,7 @@
         background-size: cover;
     }
     .bg_pestisida {
-        background-image: url(" /bg_pestisida.png");
+        background-image: url("/bg_pestisida.png");
         background-size: cover;
         background-position: center;
     }
