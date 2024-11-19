@@ -8,11 +8,11 @@ export default {
       assets: 'build',
       fallback: 'index.html',  // Penting untuk routing SPA
     }),
-    /*
+    
     paths: {
-      base: '/siprosidaui2',  // Base path untuk aplikasi di GitHub Pages
+      base: '/siprosidaui22',  // Base path untuk aplikasi di GitHub Pages
     },
-    */
+    
     prerender: {
       entries: ['*'], // Prerender semua halaman
     },
